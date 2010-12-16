@@ -1,0 +1,1 @@
+rsync -RCavz -e "ssh -i /Users/sporati/.ssh/id_rsa" --copy-unsafe-links --delete --exclude /app/cache/ --exclude /app/logs/ --cvs-exclude * www-data@front1.cambien.net:/data/www/dev/symfony2-esi-sandbox/sebastien/
