@@ -1,0 +1,4 @@
+app/cache/*
+app/log/*
+nbproject/
+rsync.sh
