@@ -6,4 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Cache\Cache;
 
 class AppCache extends Cache
 {
+
+    protected function getOptions()
+    {
+        return array(
+            'debug'                  => true,
+            'default_ttl'            => 0,
+            'private_headers'        => array('Authorization', 'Cookie'),
+            'allow_reload'           => false,
+            'allow_revalidate'       => false,
+            'stale_while_revalidate' => 2,
+            'stale_if_error'         => 60,
+        );
+    }
+
 }
